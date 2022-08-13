@@ -1,7 +1,7 @@
-package com.example.swstest.plugins
+package com.example.sws.plugins
 
-import com.example.swstest.controller.userInfoRouter
-import com.example.swstest.data.DatabaseSpec
+import com.example.sws.controller.userInfoRouter
+import com.example.sws.data.DatabaseSpec
 import io.ktor.server.application.*
 import io.ktor.server.http.content.*
 import io.ktor.server.routing.*

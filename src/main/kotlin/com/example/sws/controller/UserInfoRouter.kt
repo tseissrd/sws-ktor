@@ -1,8 +1,8 @@
-package com.example.swstest.controller
+package com.example.sws.controller
 
-import com.example.swstest.data.DatabaseSpec
-import com.example.swstest.entity.UserInfo
-import com.example.swstest.service.UserInfoService
+import com.example.sws.data.DatabaseSpec
+import com.example.sws.entity.UserInfo
+import com.example.sws.service.UserInfoService
 import io.ktor.http.*
 import io.ktor.server.application.*
 import io.ktor.server.plugins.*

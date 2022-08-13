@@ -1,4 +1,4 @@
-package com.example.swstest.plugins
+package com.example.sws.plugins
 
 import io.ktor.serialization.kotlinx.json.*
 import io.ktor.server.application.*

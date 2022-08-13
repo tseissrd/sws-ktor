@@ -1,8 +1,8 @@
-package com.example.swstest
+package com.example.sws
 
-import com.example.swstest.data.DatabaseSpec
-import com.example.swstest.plugins.configureRouting
-import com.example.swstest.plugins.configureSerialization
+import com.example.sws.data.DatabaseSpec
+import com.example.sws.plugins.configureRouting
+import com.example.sws.plugins.configureSerialization
 import io.ktor.server.application.*
 import io.ktor.server.engine.*
 import io.ktor.server.netty.*

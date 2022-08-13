@@ -1,4 +1,4 @@
-package com.example.swstest.entity
+package com.example.sws.entity
 
 import kotlinx.serialization.Serializable
 

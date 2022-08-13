@@ -1,7 +1,7 @@
-package com.example.swstest.service
+package com.example.sws.service
 
-import com.example.swstest.data.DatabaseSpec
-import com.example.swstest.entity.UserInfo
+import com.example.sws.data.DatabaseSpec
+import com.example.sws.entity.UserInfo
 import org.jetbrains.exposed.sql.Database
 import org.jetbrains.exposed.sql.LongColumnType
 import org.jetbrains.exposed.sql.VarCharColumnType

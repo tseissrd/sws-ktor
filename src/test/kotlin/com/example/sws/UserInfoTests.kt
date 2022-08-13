@@ -1,8 +1,8 @@
-package com.example.swstest
+package com.example.sws
 
-import com.example.swstest.controller.userInfoRouter
-import com.example.swstest.data.DatabaseSpec
-import com.example.swstest.entity.UserInfo
+import com.example.sws.controller.userInfoRouter
+import com.example.sws.data.DatabaseSpec
+import com.example.sws.entity.UserInfo
 import io.ktor.client.call.*
 import io.ktor.client.plugins.contentnegotiation.*
 import io.ktor.client.request.*

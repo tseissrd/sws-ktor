@@ -1,4 +1,4 @@
-package com.example.swstest.data
+package com.example.sws.data
 
 data class DatabaseSpec(
   val url: String,
