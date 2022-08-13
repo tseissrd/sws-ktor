@@ -12,8 +12,10 @@
     <kotlin.version>1.7.10</kotlin.version>
     <ktor.version>2.1.0</ktor.version>
     <exposed.version>0.38.2</exposed.version>
+    <swagger.version>2.2.2</swagger.version>
     <main.class>com.example.swstest.ApplicationKt</main.class>
   </properties>
+
   <dependencies>
     <dependency>
       <groupId>org.flywaydb</groupId>
@@ -75,7 +77,32 @@
       <artifactId>ktor-client-content-negotiation-jvm</artifactId>
       <version>${ktor.version}</version>
     </dependency>
-
+    <dependency>
+      <groupId>io.swagger.core.v3</groupId>
+      <artifactId>swagger-annotations-jakarta</artifactId>
+      <version>${swagger.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>jakarta.ws.rs</groupId>
+      <artifactId>jakarta.ws.rs-api</artifactId>
+      <version>3.1.0</version>
+    </dependency>
+    <dependency>
+      <groupId>jakarta.servlet</groupId>
+      <artifactId>jakarta.servlet-api</artifactId>
+      <version>6.0.0</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.webjars</groupId>
+      <artifactId>swagger-ui</artifactId>
+      <version>4.13.2</version>
+    </dependency>
+    <dependency>
+      <groupId>io.ktor</groupId>
+      <artifactId>ktor-server-webjars-jvm</artifactId>
+      <version>${ktor.version}</version>
+    </dependency>
 
     <dependency>
       <groupId>org.postgresql</groupId>
@@ -199,6 +226,24 @@
             <phase>package</phase>
             <goals>
               <goal>single</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>io.swagger.core.v3</groupId>
+        <artifactId>swagger-maven-plugin-jakarta</artifactId>
+        <version>${swagger.version}</version>
+        <configuration>
+          <outputFileName>openapi</outputFileName>
+          <outputPath>${project.build.directory}/classes/static</outputPath>
+          <configurationFilePath>${project.basedir}/src/main/resources/swagger-config.json</configurationFilePath>
+        </configuration>
+        <executions>
+          <execution>
+            <phase>compile</phase>
+            <goals>
+              <goal>resolve</goal>
             </goals>
           </execution>
         </executions>

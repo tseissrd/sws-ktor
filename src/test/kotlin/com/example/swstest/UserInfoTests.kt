@@ -68,7 +68,7 @@ class UserInfoTests {
 
 		appBuilder.routing {
 			route("/test") {
-				userInfoRouter(testDsSpec)
+				userInfoRouter(this, testDsSpec)
 			}
 		}
 	}

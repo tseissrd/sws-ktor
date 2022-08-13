@@ -1,0 +1,7 @@
+{
+  "resourcePackages": [
+    "com.example.swstest.controller"
+  ],
+  "prettyPrint" : true,
+  "readAllResources": false
+}
